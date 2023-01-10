@@ -1,0 +1,43 @@
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    background-image: linear-gradient(135deg, var(--medium-grey) 60%, var(--dark-blue));
+    flex-direction: column;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--white);
+}
+img {
+    max-width: 1rem;
+}
