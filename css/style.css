@@ -28,7 +28,7 @@ main{
 
 .card-container {
     display: flex;
-    background-image: linear-gradient(135deg, var(--medium-grey) 60%, var(--dark-blue));
+    background-color: var(--dark-blue);
     flex-direction: column;
     max-width: 400px;
     padding: 1.5rem;
@@ -40,4 +40,7 @@ h1{
 }
 img {
     max-width: 1rem;
+}
+:target{
+    color: yellow;
 }
