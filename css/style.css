@@ -34,21 +34,20 @@ main{
         var(--very-dark-blue)
     );
     flex-direction: column;
-    max-width: 40rem;
+    max-width: 35rem;
     padding: 3rem;
-    border-radius: 10px;
-    gap: 1em;
+    border-radius: 25px;
+    gap: 1.5rem;
 }
 
 h1{
     color: var(--white);
+    margin-bottom: 0;
 }
 p {
-    color: var(--light-grey);
+    margin-top: 0;
+    color: var(--medium-grey);
     max-width: 47ch;
-}
-img {
-    max-width: 1rem;
 }
 
 .rating-value-container {
@@ -57,7 +56,7 @@ img {
     justify-content: space-between;
 }
 
-.rating-value {
+.rating-value, .star-icon {
     background: var(--dark-blue);
     line-height: 3.5rem;
     width: 3.5rem;
@@ -67,8 +66,39 @@ img {
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.star-icon {
+    object-fit: scale-down;
 }
 
 :target{
-    color: yellow;
+    color: var(--white);
+    background-color: var(--medium-grey);
+}
+
+a:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-radius: 20px;
+    border: 0;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
 }
