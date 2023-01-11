@@ -28,19 +28,47 @@ main{
 
 .card-container {
     display: flex;
-    background-color: var(--dark-blue);
+    background-image: radial-gradient(
+        circle at center top,
+        var(--dark-blue), 
+        var(--very-dark-blue)
+    );
     flex-direction: column;
-    max-width: 400px;
-    padding: 1.5rem;
+    max-width: 40rem;
+    padding: 3rem;
     border-radius: 10px;
+    gap: 1em;
 }
 
 h1{
     color: var(--white);
 }
+p {
+    color: var(--light-grey);
+    max-width: 47ch;
+}
 img {
     max-width: 1rem;
 }
+
+.rating-value-container {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.rating-value {
+    background: var(--dark-blue);
+    line-height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100%;
+    padding: 10px;
+    color: var(--medium-grey);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
 :target{
     color: yellow;
 }
