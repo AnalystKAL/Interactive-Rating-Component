@@ -20,6 +20,7 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
+    <script src="./script.js" defer></script>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -35,7 +36,7 @@
   <body>
     <!-- Rating state start -->
     <main>
-      <div class="card-container">
+      <div class="card-container" id="initial">
         <img
           class="star-icon"
           src="./images/icon-star.svg"
@@ -53,19 +54,25 @@
           <a href="#target4" id="target4" class="target rating-value">4</a>
           <a href="#target5" id="target5" class="target rating-value">5</a>
         </div>
-        <button type="button" class="submit-btn">Submit</button>
+        <button type="button" class="submit-btn" onclick="changeState()">
+          Submit
+        </button>
       </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thanks-container" id="onclick">
+        You selected
+        <!-- Add rating here -->out of 5
+        <h1>Thank you!</h1>
+        <p style="text-align: center">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don&#39;t hesitate to get in touch!
+        </p>
+      </div>
+
+      <!-- Thank you state end -->
     </main>
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
 
     <div class="attribution">
       Challenge by

@@ -26,7 +26,7 @@ main{
     font-size: 1.5rem;
 }
 
-.card-container {
+.card-container, .thanks-container {
     display: flex;
     background-image: radial-gradient(
         circle at center top,
@@ -38,6 +38,10 @@ main{
     padding: 3rem;
     border-radius: 25px;
     gap: 1.5rem;
+}
+
+.thanks-container  {
+    display: none;
 }
 
 h1{
